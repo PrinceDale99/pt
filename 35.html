@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    
+    <form action="your_server_script.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="class-year">Class Year:</label>
+        <select id="class-year" name="class-year">
+            <option value="2021-2022">2021-2022</option>
+            <option value="2022-2023">2022-2023</option>
+            <option value="2023-2024">2023-2024</option>
+        </select>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+        <br><br>
+
+        <label for="photo">Upload Photo/File:</label>
+        <input type="file" id="photo" name="photo" accept=".jpg, .jpeg, .png, .pdf" required>
+        <br><br>
+
+        <input type="submit" name="register" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
